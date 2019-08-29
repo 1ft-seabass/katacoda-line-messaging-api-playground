@@ -4,12 +4,12 @@ const express = require('express');
 const line = require('@line/bot-sdk');
 const PORT = process.env.PORT || 3000;
 
+// Change channelSecret / channelAccessToken by your bot setting.
 const config = {
     channelSecret: 'channelSecret',
     channelAccessToken: 'channelAccessToken'
 };
 
-// 日本語
 const app = express();
 
 app.get('/', (req, res) => res.send('Hello LINE BOT!(GET)'));
